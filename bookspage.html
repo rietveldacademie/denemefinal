@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>books</title>
+    <link rel="icon" href="birceicon.png" type="image/icon type">
+</head>
+<style>
+
+
+html {
+        cursor: url(bookscursor.png), auto;
+    }
+
+    @font-face {
+        font-family: vanished;
+        src: url(vanished.ttf);
+    }
+
+    @font-face {
+        font-family: andale mono;
+        src: url(andale.ttf);
+    }
+
+    body {
+        background-size:  90em;
+        background-repeat: no-repeat;
+        background-color: #f5f1f1;
+        background-attachment: fixed;
+        
+    }
+
+    .maingrid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 10px;
+        position: absolute;
+    }
+
+    .title {
+        padding: 0.3%;
+        position: fixed;
+    }
+
+    .titleimage {
+        width: 36%;
+        max-width: 30em;
+        margin-top: -3%;
+
+    }
+
+    .mainphoto {
+        width: 28%;
+        position: fixed;
+        outline: solid rgb(255, 255, 255);
+        outline-width: 0.6pt;
+        image-orientation: inherit;
+    }
+
+    .mainelement {
+        margin-left: 15em;
+        margin-top: 1.7em;
+        transition: width 2s, height 4s;
+
+    }
+
+    .menu {
+        transform: rotate(270deg);
+        position: fixed;
+        left: -45px;
+        font-size: 17pt;
+        font-family: vanished;
+        text-decoration: none;
+        bottom: 95px;
+    }
+
+    img {
+    image-orientation: from-image;
+}
+
+    .menuelement:hover {
+        color: transparent;
+        -webkit-text-stroke-color: #887ab2;
+        -webkit-text-stroke-width: 1.5px;
+    }
+
+    .menudivs {
+        height: 8px;
+    }
+
+    a {
+        text-decoration: none;
+        color:  #cddeeb;
+
+    }
+
+    .button:hover {
+        cursor: pointer;
+        background-color: #887ab2;
+        border: solid #887ab2 1pt;
+        -webkit-text-fill-color: rgb(255, 255, 255);
+
+    }
+
+    .store {
+        -webkit-text-stroke-color: #cddeeb;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-fill-color: transparent;
+        letter-spacing: 2px;
+    }
+
+    .store:hover {
+        -webkit-text-stroke-color: #887ab2;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-fill-color: transparent
+    }
+
+    .selectedmenuelement {
+        -webkit-text-stroke-color: #887ab2;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .righttopheader {
+        float: right;
+        color: #887ab2;
+        margin-left: 99.5%;
+        width: 300px;
+        font-family: vanished;
+        font-size: 17pt;  
+        margin-top: 12px; 
+        position: fixed;
+        right: -177px;
+    }
+
+    p {
+        color: rgb(0, 0, 0);
+        font-family: andale mono;
+        text-align: left;
+    }
+
+
+    .insidetext {
+        margin-top: 0;
+        text-align: left;
+    }
+
+    .insidetext2 {
+        margin-top: -14px;
+    }
+    .insideheader {
+        margin-top: 10px;
+        text-decoration: underline;
+    }
+
+    .insideheader2 {
+        margin-top: 50px;
+        text-decoration: underline;
+    }
+
+    .maintext {
+        left: 200px;
+        position: sticky;
+    }
+
+    .smallerseperator {
+        height: 0.1px;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* .contactbox { */
+        width: 39.1%;
+        height: 10em;
+        margin-left: 37.3%;
+        outline: solid white;
+        outline-width: 1.5px;
+    }
+
+    input[type=text], select, textarea, ::placeholder{
+  width: 400%;
+  padding: 12px;
+  border: 1px solid rgb(0, 0, 0);
+  margin-top: 6px;
+  margin-left: 400px;
+  margin-bottom: 16px;
+  resize: vertical;
+  text-decoration: yellow;
+}
+
+.contactbox {
+    margin-top: 20px;
+    left: 36.9%;
+    width: 39%;
+    height: 156px;
+    position: relative;
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    font-family: andale mono;
+}
+
+.submitbutton {
+    left: 36.9%;
+    width: 10%;
+    position: relative;
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    font-family: andale mono;
+}
+
+@-webkit-keyframes entranceanimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+
+    }
+}
+
+@-webkit-keyframes entranceanimation2 {
+    0% {
+        opacity: 0;
+    }
+
+
+
+    100% {
+        opacity: 1;
+
+    }
+}
+
+    .maindiv {
+        margin-left: 37%;
+        column-width: ;
+        column-gap: 0px;
+        margin-top: 3.5%;
+        width: 40%;
+        stroke-width: 1pt;
+        animation: entranceanimation 3s 1;
+        
+
+    }
+
+    .image1 {
+        display: inline-block;
+        width: 100%;
+        margin-left: -10px;
+        transition: 3s;
+
+    }
+
+    .image2 {
+        width: 100%;
+        margin-left: -10px;
+        transition: 3s;
+    }
+
+    
+
+    .button {
+        border: solid rgb(0, 0, 0) 1pt;
+        padding: 1pt;
+        width: 100%;
+        text-decoration: none;
+    }
+
+    .enddiv {
+        height: 3%;
+    }
+
+    .image2:hover {
+        filter: blur(100px);
+
+    }
+
+    .image1:hover {
+        filter: blur(100px);
+    }
+
+
+#slide {
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide 0.5s forwards;
+    animation-delay: 2s;
+    width: 40%;
+}
+
+@-webkit-keyframes slide {
+    100% { left: 0; }
+    
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
+
+@media screen and (max-width: 700px) {
+    .mainphoto {
+        top: 100px;
+        width: 62%;
+        right: 20px;
+        animation: menuanimation2 1 5s forwards;
+        animation-delay: 1s;
+        z-index: 950;
+    }
+
+
+    .maingrid {
+        margin-left: -160px;
+    }
+    .menu {
+        animation: menuanimation 1 5s forwards;
+    }
+
+    @-webkit-keyframes menuanimation {
+    0% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 60%;
+
+    }
+}
+
+@-webkit-keyframes menuanimation2 {
+    0% {
+        filter: blur(0);
+    }
+
+    100% {
+        filter: blur(30px);
+
+    }
+}
+
+.fcf-form-control3 {
+    display: block;
+    width: 85.5%;
+    height: 17px;
+    font-size: 10pt;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    background-color: transparent;
+    background-clip: padding-box;
+    border: 1px solid #000000;
+    outline: none;
+    margin-left: 2.7%;
+}
+
+
+.titleimage {
+        width: 40%;
+        margin-left: 100px;
+        opacity: 150%;
+    }
+
+
+    .animationwarning {
+        color: transparent;
+    }
+
+    
+    .righttopheader {
+        float: right;
+        color: #887ab2;
+        margin-left: 90.5%;
+        width: 100%;
+        font-family: vanished;
+        font-size: 17pt;  
+        position: fixed;
+    }
+
+    .maintext {
+        position: relative;
+        animation: entranceanimation 3s 1;
+    }
+
+    p {
+        color: rgb(0, 0, 0);
+        font-family: andale mono;
+        width: 370%;
+        margin-left: -224%;
+        margin-top: 70%;
+        text-align: left;
+        mix-blend-mode: darken;
+        font-weight: bold
+    }
+
+    .fcf-body {
+    
+    font-family: andale mono;
+    font-size: 1rem;
+    font-family: andale mono;
+    color: #000000;
+    text-align: left;
+    background-color: transparent;
+    padding-top: -0px;
+    border: 1px solid #000000;
+    width: 199%;
+    margin-left: -184.1%;
+    margin-bottom: 10.1%;
+}
+
+@media screen and (max-width: 700px) {
+    .mainphoto {
+        top: 100px;
+        width: 62%;
+        right: 20px;
+        animation: menuanimation2 1 5s forwards;
+        animation-delay: 1s;
+        z-index: -20;
+    }
+
+    .menu {
+        animation: menuanimation 1 5s forwards;
+    }
+
+    @-webkit-keyframes menuanimation {
+    0% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 50%;
+
+    }
+}
+
+@-webkit-keyframes menuanimation2 {
+    0% {
+        filter: blur(0);
+        opacity: 100%;
+    }
+
+    100% {
+        filter: blur(30px);
+        opacity: 50%;
+        mix-blend-mode: overlay;
+
+    }
+}
+
+.fcf-form-control3 {
+    display: block;
+    width: 85.5%;
+    height: 17px;
+    font-size: 10pt;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    background-color: transparent;
+    background-clip: padding-box;
+    border: 1px solid #000000;
+    outline: none;
+    margin-left: 2.7%;
+}
+
+
+.titleimage {
+        width: 38%;
+        opacity: 150%;
+        margin-left: 33%;
+    }
+
+
+    .animationwarning {
+        color: transparent;
+    }
+
+
+
+    .maintext {
+        position: relative;
+        animation: entranceanimation 3s 1;
+    }
+
+    p {
+        color: rgb(0, 0, 0);
+        font-family: andale mono;
+        width: 21em;
+        margin-left: -145px;
+        font-size: 10pt;
+        text-align: left;
+        font-weight: bold;
+        margin-top: 0px
+    }
+
+
+.maindiv {
+        column-width: ;
+        column-gap: 0px;
+        margin-top: 110px;
+        margin-left: 50px;
+        width: 400px;
+        stroke-width: 1pt;
+
+    }
+
+    .image1 {
+        width: 365px;
+        opacity: 100%;
+        transition: 30s;
+        margin-left: -152px;
+        z-index: 900;
+    }
+
+    .image2 {
+        width: 365px;
+        opacity: 100%;
+        transition: 30s;
+        margin-left: -152px;
+        z-index: 900;
+    }s
+
+.instruction {
+    color: transparent;
+    position: sticky;
+    left: 48.8%;
+    top: 80.1%;
+    animation: entranceanimation2 7s 1 forwards;
+}
+
+
+   
+.righttopheader {
+        float: right;
+        color: #887ab2;
+        margin-right: -80px;
+        width: 100%;
+        font-family: vanished;
+        font-size: 17pt;  
+        position: fixed;
+    }
+
+    .button {
+        border: solid rgb(0, 0, 0) 1pt;
+        padding: 1pt;
+        width: 85%;
+        text-decoration: none;
+        z-index: 900;
+    }
+
+
+    .enddiv {
+    height: 320px;
+}
+
+
+.image2:hover {
+        filter: blur(200px);
+
+    }
+
+    .image1:hover {
+        filter: blur(200px);
+    }
+    }
+
+    
+
+}
+
+
+
+</style>
+<body>
+
+    <div class="righttopheader">
+        books
+    </div>
+
+    <div class="maingrid">
+        <div class="title"><a href="index.html"><img class="titleimage" src="logo4.png" alt="righttopheader" ></a></div>
+        <div class="mainelement"><img class="mainphoto" src="sculpture44.jpg" alt=""></div>
+        <div class="three">
+     
+        </div >
+        <div class="menu">  
+            <a class="menuelement" href="aboutpage.html" id="toprightheader">about ∰ contact</a>
+            <div class="menudivs"></div>
+            <a class="menuelement" href="projectspage.html">projects</a>
+            <div class="menudivs"></div>
+            <a class="selectedmenuelement" href="bookspage.html">books</a>
+            <div class="menudivs"></div>
+            <a class="menuelement" href="imagespage.html">images</a>
+            <div class="menudivs"></div>
+            <a class="store" href="store.html">store</a>
+        </div>
+
+        <div class="maindiv">
+            <p class="insideheader">Before Killing the Day I Kissed the Window</p>
+            <img class="image1" src="beforekillingcover.png" alt="">
+            <div></div>
+             <p ><em>Before Killing the Day I Kissed the Window </em>is a short novel that depicts the one-day journey of a first-time commuter who mysteriously ends up
+                 in a circle of events where there is no exit, neither from the past nor the future.
+                <div></div>
+                <a href="beforekillingpage.html" > <p class="button">See Details</p> </a>
+
+            <p class="insideheader2">I want it, So I postpone</p>
+            <div class="iwantitcover">
+               <img class="image2" src="iwantitcover.png" alt=""> 
+            </div>
+            <div></div>
+            <p class="thintext"><em>IWSIP: No-Man’s Poetry</em> is an illustrated poetry book of thirty poems written in English.
+                <div></div>
+                <a href="iwantitpage.html" > <p class="button">See Details</p> </a>
+                
+                <div class="enddiv"></div>
+
+
+                
+        </div>
+    
+                            
+</body>
+</html>

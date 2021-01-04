@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <link rel="icon" href="birceicon.png" type="image/icon type">
+</head>
+<style>
+
+@font-face { font-family: andale mono; src: url(andale.ttf) format("svg"); }
+
+
+html {
+        cursor: url(projectscursor.png), auto;
+        cursor: pointer url(projectscursor.png);
+    }
+
+    @font-face {
+        font-family: vanished;
+        src: url(vanished.ttf);
+    }
+
+    @font-face {
+        font-family: andale mono;
+        src: url(andale.ttf);
+    }
+
+    body {
+        background: url();
+        background-size:  90em;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-color: #f5f1f1;
+    }
+
+    .maingrid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 10px;
+        position: absolute;
+    }
+
+    .title {
+        padding: 0.3%;
+        position: fixed;
+    }
+
+    .titleimage {
+        width: 36%;
+        max-width: 30em;
+        margin-top: -3%;
+
+    }
+
+    .mainphoto {
+        width: 28%;
+        position: fixed;
+        outline: solid rgb(255, 255, 255);
+        outline-width: 0.6pt;
+    }
+
+    .mainelement {
+        margin-left: 15em;
+        margin-top: 1.7em;
+        transition: width 2s, height 4s;
+    }
+
+    .menu {
+        transform: rotate(270deg);
+        position: fixed;
+        left: -45px;
+        font-size: 17pt;
+        font-family: vanished;
+        text-decoration: none;
+        bottom: 95px;
+    }
+
+    .menuelement:hover {
+        color: transparent;
+        -webkit-text-stroke-color: #a9adb8;
+        -webkit-text-stroke-width: 1.5px;
+    }
+
+    .menudivs {
+        height: 8px;
+    }
+
+    a {
+        text-decoration: none;
+        color:  #7f8d6d;
+
+    }
+
+    .store {
+        -webkit-text-stroke-color: #7f8d6d;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-fill-color: transparent;
+        letter-spacing: 2px;
+    }
+
+    .store:hover {
+        -webkit-text-stroke-color: #a9adb8;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-fill-color: transparent
+    }
+
+    .selectedmenuelement {
+        -webkit-text-stroke-color: #a9adb8;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .righttopheader {
+        float: right;
+        color: #a9adb8;
+        margin-left: 78.5%;
+        width: 300px;
+        font-family: vanished;
+        font-size: 17pt;  
+        margin-top: 12px; 
+        position: fixed;
+        right: -130px;
+    }
+
+    p {
+        color: rgb(0, 0, 0);
+        position: relative;
+        font-family: andale mono;
+        margin-top: 55px;
+        text-align: justify;
+        text-decoration: underline;
+    }
+
+    .seperatordiv {
+        height: 1px;
+    }
+
+    .seperatordiv2 {
+        margin-top: 1px;
+    }
+
+    .insidetext {
+        margin-top: 0;
+        text-align: justify;
+    }
+
+    .insidetext2 {
+        margin-top: -14px;
+    }
+    .insideheader {
+        text-decoration: underline; 
+        width: 100%;
+    }
+
+    .maintext {
+        position: relative;
+        width: 50%;
+        left: 52%;
+    }
+
+    .maintext2 {
+        text-decoration: underline;
+        margin-top: 80px;scroll-margin-bottom: ;
+    }
+
+    .smallerseperator {
+        height: 0.1px;
+        padding: 0;
+        margin: 0;
+    }
+
+
+.contactbox {
+    margin-top: 20px;
+    left: 36.9%;
+    width: 39%;
+    height: 156px;
+    position: relative;
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    font-family: andale mono;
+}
+
+.submitbutton {
+    left: 36.9%;
+    width: 10%;
+    position: relative;
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    font-family: andale mono;
+}
+
+@-webkit-keyframes entranceanimation  { 
+    0% {
+        opacity: 0;
+        
+    }
+ 
+    100% {
+        opacity: 1;
+
+    }
+}
+
+.thintext {
+        animation: entranceanimation 2s 1;
+    }
+
+.secondline {
+    margin-top: 20px
+}
+
+.event {
+    margin-top: -15px;
+    float: left;
+}
+
+.event2 {
+    float: left;
+    margin-top: -10px;
+}
+
+
+.eventplace {
+	float: right;
+    margin-top: -34px;
+}
+
+.eventplace2 {
+	float: right;
+    margin-top: -15px;
+}
+
+.eventplace3 {
+    float: right;
+    margin-top: -57.5px;
+    margin-bottom: 20px;
+}
+
+.eventplace4 {
+    float: right;
+    margin-top: -76.5px;
+    margin-bottom: 20px;
+}
+
+
+.hey {
+    margin-bottom: 10px;
+}
+
+.event2 {
+    float: left;
+    margin-bottom: 20px;
+    margin-top: -14px;
+}
+
+ul {
+    opacity: 0;
+}
+
+@media (min-width: 1450px;) {
+    p {
+        margin-left: 50%;
+    }
+
+}
+
+.credit {
+        transform: rotate(270deg);
+        position: fixed;
+        right: 250px;
+        bottom: 125px;
+        transition: 3s;
+    }
+    
+    .creditlink {
+        color: #90332c;
+    }
+
+    .creditlink:hover {
+        color: #90332c;
+        text-decoration: underline;
+    }
+
+.maindiv {
+        stroke-width: 1pt;
+        animation: entranceanimation 3s 1;
+        }
+        
+table {
+  font-family: andale mono;
+  border-collapse: collapse;
+  font-size: 1rem;
+  vertical-align: top;
+}
+
+td, th, tr {
+  text-align: left;
+  padding-bottom:5pt;
+  vertical-align: top;
+  padding-right: 200px;
+}
+
+.transparent {
+    color: transparent;
+    text-decoration: none;
+}
+
+.tableee {
+    float: right;
+    position: relative;
+    width: 50%;
+    margin-left: 840px;
+    margin-top: 15px;
+    right: 500px;
+    font-family: andale mono;
+    
+    }
+
+    @media screen and (max-width: 700px) {
+    .mainphoto {
+        top: 100px;
+        width: 62%;
+        right: 20px;
+        animation: menuanimation2 1 5s forwards;
+        animation-delay: 1s;
+        z-index: 950;
+    }
+
+
+    .maingrid {
+        margin-left: -160px;
+    }
+    .menu {
+        animation: menuanimation 1 5s forwards;
+    }
+
+    @-webkit-keyframes menuanimation {
+    0% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 60%;
+
+    }
+}
+
+@-webkit-keyframes menuanimation2 {
+    0% {
+        filter: blur(0);
+    }
+
+    100% {
+        filter: blur(30px);
+
+    }
+}
+
+.fcf-form-control3 {
+    display: block;
+    width: 85.5%;
+    height: 17px;
+    font-size: 10pt;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    background-color: transparent;
+    background-clip: padding-box;
+    border: 1px solid #000000;
+    outline: none;
+    margin-left: 2.7%;
+}
+
+
+.titleimage {
+        width: 40%;
+        margin-left: 100px;
+        opacity: 150%;
+    }
+
+
+    .animationwarning {
+        color: transparent;
+    }
+
+    
+    .righttopheader {
+        float: right;
+        margin-left: 90.5%;
+        width: 100%;
+        font-family: vanished;
+        font-size: 17pt;  
+        position: fixed;
+    }
+
+    .maintext {
+        position: relative;
+        animation: entranceanimation 3s 1;
+    }
+
+    p {
+        color: rgb(0, 0, 0);
+        font-family: andale mono;
+        width: 370%;
+        margin-left: -224%;
+        margin-top: 70%;
+        text-align: left;
+        mix-blend-mode: darken;
+        font-weight: bold
+    }
+
+    .fcf-body {
+    
+    font-family: andale mono;
+    font-size: 1rem;
+    font-family: andale mono;
+    color: #000000;
+    text-align: left;
+    background-color: transparent;
+    padding-top: -0px;
+    border: 1px solid #000000;
+    width: 199%;
+    margin-left: -184.1%;
+    margin-bottom: 10.1%;
+}
+
+.enddiv {
+    height: 300px;
+}
+
+@media screen and (max-width: 700px) {
+    .mainphoto {
+        top: 100px;
+        width: 62%;
+        right: 20px;
+        animation: menuanimation2 1 5s forwards;
+        animation-delay: 1s;
+        z-index: -20;
+    }
+
+    .menu {
+        animation: menuanimation 1 5s forwards;
+    }
+
+    @-webkit-keyframes menuanimation {
+    0% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 50%;
+
+    }
+}
+
+@-webkit-keyframes menuanimation2 {
+    0% {
+        filter: blur(0);
+        opacity: 100%;
+    }
+
+    100% {
+        filter: blur(30px);
+        opacity: 50%;
+        mix-blend-mode: overlay;
+
+    }
+}
+
+.fcf-form-control3 {
+    display: block;
+    width: 85.5%;
+    height: 17px;
+    font-size: 10pt;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    background-color: transparent;
+    background-clip: padding-box;
+    border: 1px solid #000000;
+    outline: none;
+    margin-left: 2.7%;
+}
+
+
+.titleimage {
+        width: 38%;
+        opacity: 150%;
+        margin-left: 33%;
+    }
+
+
+    .animationwarning {
+        color: transparent;
+    }
+
+
+
+    .maintext {
+        position: relative;
+        animation: entranceanimation 3s 1;
+    }
+
+    p {
+        color: rgb(0, 0, 0);
+        font-family: andale mono;
+        width: 21em;
+        margin-left: -145px;
+        font-size: 10pt;
+        text-align: left;
+        font-weight: bold;
+        margin-top: 0px
+    }
+
+
+.maindiv {
+        column-width: ;
+        column-gap: 0px;
+        margin-top: 110px;
+        margin-left: 50px;
+        width: 400px;
+        stroke-width: 1pt;
+
+    }
+
+    .image1 {
+        width: 365px;
+        opacity: 100%;
+        transition: 30s;
+        margin-left: -152px;
+        z-index: 900;
+    }
+
+    .image2 {
+        width: 365px;
+        opacity: 100%;
+        transition: 30s;
+        margin-left: -152px;
+        z-index: 900;
+    }s
+
+.instruction {
+    color: transparent;
+    position: sticky;
+    left: 48.8%;
+    top: 80.1%;
+    animation: entranceanimation2 7s 1 forwards;
+}
+   
+.righttopheader {
+        float: right;
+        margin-right: -80px;
+        width: 100%;
+        font-family: vanished;
+        font-size: 17pt;  
+        position: fixed;
+    }
+
+    .button {
+        border: solid rgb(0, 0, 0) 1pt;
+        padding: 1pt;
+        width: 85%;
+        text-decoration: none;
+    }
+
+    .tableee {
+    float: left;
+    position: relative;
+    width: 450px;
+    top: 75px;
+    margin-left: 330px;
+    
+    }
+
+
+    .enddiv {
+    height: 390px;
+}
+
+    }
+
+}
+
+
+
+</style>
+<body>
+
+    <div class="righttopheader">
+        projects
+    </div>
+
+    <div class="maingrid">
+        <div class="title"><a href="index.html"><img class="titleimage" src="logo3.png" alt="righttopheader" ></a></div>
+        <div class="mainelement"><img class="mainphoto" src="sculpture3.jpg" alt=""></div>
+        <div class="three">
+     
+        </div >
+        <div class="menu">  
+            <a class="menuelement" href="aboutpage.html" id="toprightheader">about ∰ contact</a>
+            <div class="menudivs"></div>
+            <a class="selectedmenuelement" href="projectspage.html">projects</a>
+            <div class="menudivs"></div>
+            <a class="menuelement" href="bookspage.html">books</a>
+            <div class="menudivs"></div>
+            <a class="menuelement" href="imagespage.html">images</a>
+            <div class="menudivs"></div>
+            <a class="store" href="store.html">store</a>
+        </div>
+
+
+        <svg class="tableee" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 595.28 841.89" style="enable-background:new 0 0 595.28 841.89;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{stroke:#000000;stroke-width:0.4;stroke-miterlimit:10;}
+	.st2{font-family:'andale mono';}
+	.st3{font-size:17px;}
+</style>
+<rect x="97.42" y="42.48" class="st0" width="391.64" height="830.64"/>
+<text transform="matrix(1 0 0 1 97.4168 54.1959)"><tspan x="0" y="0" class="st1 st2 st3" style="text-decoration: underline;">Group Exhibitions / Publications / </tspan><tspan x="0" y="20.4" class="st1 st2 st3" style="text-decoration: underline;">Readings</tspan><tspan x="0" y="61.2" class="st1 st2 st3">2020</tspan><tspan x="0" y="84.2" class="st1 st2 st3">Graduation Show</tspan><tspan x="0" y="124.6" class="st1 st2 st3">2019</tspan><tspan x="0" y="144.6" class="st1 st2 st3">Letter “Z”</tspan><tspan x="0" y="187.6" class="st1 st2 st3">Letter “Z”</tspan><tspan x="0" y="250.6" class="st1 st2 st3">Letter “Z”</tspan><tspan x="0" y="296.6" class="st1 st2 st3">Take a walk on</tspan><tspan x="0" y="316.6" class="st1 st2 st3">the wild side/</tspan><tspan x="0" y="336.6" class="st1 st2 st3">Uncut</tspan><tspan x="0" y="377" class="st1 st2 st3">2018</tspan><tspan x="0" y="397" class="st1 st2 st3">Hold Me Now/</tspan><tspan x="0" y="417" class="st1 st2 st3">Uncut</tspan><tspan x="0" y="440" class="st1 st2 st3">The Great Bake Off</tspan><tspan x="0" y="486" class="st1 st2 st3">Museum in Bloom</tspan><tspan x="0" y="575.4" class="st1 st2 st3" style="text-decoration: underline;">Solo Publications</tspan><tspan x="0" y="616.2" class="st1 st2 st3">2020</tspan><tspan x="0" y="639.2" class="st1 st2 st3">Before Killing</tspan><tspan x="0" y="662.2" class="st1 st2 st3">the Day I Kissed</tspan><tspan x="0" y="685.2" class="st1 st2 st3">the Window</tspan><tspan x="0" y="731.2" class="st1 st2 st3">2019</tspan><tspan x="0" y="754.2" class="st1 st2 st3">I Want It,</tspan><tspan x="0" y="777.2" class="st1 st2 st3">So I Postpone</tspan></text>
+<rect x="328.98" y="102.37" class="st0" width="410.14" height="768.76"/>
+<text transform="matrix(1 0 0 1 328.9833 137.0801)"><tspan x="0" y="0" class="st1 st2 st3">Gerrit Rietveld </tspan><tspan x="0" y="23" class="st1 st2 st3">Academie</tspan><tspan x="0" y="63.4" class="st1 st2 st3">live reading, </tspan><tspan x="0" y="83.4" class="st1 st2 st3">Van Gogh Museum</tspan><tspan x="0" y="106.4" class="st1 st2 st3">live reading, Launch </tspan><tspan x="0" y="126.4" class="st1 st2 st3">of Rietveld Journal,</tspan><tspan x="0" y="146.4" class="st1 st2 st3">Rietveld Pavilion</tspan><tspan x="0" y="167.4" class="st1 st2 st3">published in Rietveld</tspan><tspan x="0" y="187.4" class="st1 st2 st3">Journal, 1st issue</tspan><tspan x="0" y="213.4" class="st1 st2 st3">Stedelijk Museum,</tspan><tspan x="0" y="233.4" class="st1 st2 st3">Amsterdam</tspan><tspan x="0" y="314.4" class="st1 st2 st3">Stedelijk Museum,</tspan><tspan x="0" y="334.4" class="st1 st2 st3">Amsterdam</tspan><tspan x="0" y="357.4" class="st1 st2 st3">Tungsten Studio,</tspan><tspan x="0" y="380.4" class="st1 st2 st3">Broek in Waterland</tspan><tspan x="0" y="403.4" class="st1 st2 st3">Frans Hals Museum,</tspan><tspan x="0" y="426.4" class="st1 st2 st3">Haarlem</tspan><tspan x="0" y="449.4" class="st1 st2 st3"></tspan><tspan x="0" y="555.4" class="st1 st2 st3">Amsterdam</tspan><tspan x="0" y="671.4" class="st1 st2 st3">Amsterdam</tspan></text>
+</svg>
+
+
+
+
+
+
+
+</table>
+<div class="enddiv"></div>
+</body>
+</html>

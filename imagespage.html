@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>images</title>
+    <link rel="icon" href="birceicon.png" type="image/icon type">
+</head>
+<style>
+
+
+html {
+        cursor: url(imagescursor.png), auto;
+    }
+
+    @font-face {
+        font-family: vanished;
+        src: url(vanished.ttf);
+    }
+
+    @font-face {
+        font-family: andale mono;
+        src: url(andale.ttf);
+    }
+
+    body {
+        background-size:  90em;
+        background-repeat: no-repeat;
+        background-color: #f5f1f1;
+        background-attachment: fixed;
+    }
+
+    .maingrid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 10px;
+        position: absolute;
+    }
+
+    .title {
+        padding: 0.3%;
+        position: fixed;
+    }
+
+    .titleimage {
+        width: 36%;
+        max-width: 30em;
+        margin-top: -3%;
+        opacity: 500%;
+        
+
+    }
+
+    .mainphoto {
+        width: 28%;
+        position: fixed;
+        outline: solid rgb(255, 255, 255);
+        outline-width: 0.6pt;
+        image-orientation: inherit;
+    }
+
+    .mainelement {
+        margin-left: 15em;
+        margin-top: 1.7em;
+        transition: width 2s, height 4s;
+        image-orientation: from-image
+    }
+
+    .menu {
+        transform: rotate(270deg);
+        position: fixed;
+        left: -45px;
+        font-size: 17pt;
+        font-family: vanished;
+        text-decoration: none;
+        bottom: 95px;
+    }
+
+    img {
+    image-orientation: from-image;
+}
+
+    .menuelement:hover {
+        color: transparent;
+        -webkit-text-stroke-color: #86985c;
+        -webkit-text-stroke-width: 1.5px;
+    }
+
+    .menudivs {
+        height: 8px;
+    }
+
+    a {
+        text-decoration: none;
+        color:  #adc3d4;
+
+    }
+
+    .store {
+        -webkit-text-stroke-color: #adc3d4;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-fill-color: transparent;
+        letter-spacing: 2px;
+    }
+
+    .store:hover {
+        -webkit-text-stroke-color: #86985c;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-fill-color: transparent
+    }
+
+    .selectedmenuelement {
+        -webkit-text-stroke-color: #86985c;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .righttopheader {
+        float: right;
+        color: #86985c;
+        margin-left: 99.5%;
+        width: 300px;
+        font-family: vanished;
+        font-size: 17pt;  
+        margin-top: 12px; 
+        position: fixed;
+        right: -177px;
+    }
+
+    p {
+        color: rgb(0, 0, 0);
+        font-family: andale mono;
+        text-align: left;
+    }
+
+
+    .insidetext {
+        margin-top: 0;
+        text-align: left;
+    }
+
+    .insidetext2 {
+        margin-top: -14px;
+    }
+    .insideheader {
+        margin-top: 10px;
+        text-decoration: underline;
+    }
+
+    .insideheader2 {
+        margin-top: 50px;
+        text-decoration: underline;
+    }
+
+    .maintext {
+        left: 200px;
+        position: sticky;
+    }
+
+    .smallerseperator {
+        height: 0.1px;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* .contactbox { */
+        width: 39.1%;
+        height: 10em;
+        margin-left: 37.3%;
+        outline: solid white;
+        outline-width: 1.5px;
+    }
+
+    input[type=text], select, textarea, ::placeholder{
+  width: 400%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-left: 400px;
+  margin-bottom: 16px;
+  resize: vertical;
+  text-decoration: yellow;
+}
+
+.contactbox {
+    margin-top: 20px;
+    left: 36.9%;
+    width: 39%;
+    height: 156px;
+    position: relative;
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    font-family: andale mono;
+}
+
+.submitbutton {
+    left: 36.9%;
+    width: 10%;
+    position: relative;
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    font-family: andale mono;
+}
+
+@-webkit-keyframes entranceanimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+
+    }
+}
+
+    .maindiv {
+        margin-left: 37%;
+        column-width: ;
+        column-gap: 0px;
+        margin-top: 3.5%;
+        width: 40%;
+        stroke-width: 1pt;
+        animation: entranceanimation 3s 1;
+        
+
+    }
+
+    .image1 {
+        width: 100%;
+        margin-left: -10px;
+    }
+
+    .button {
+        border: solid white 1pt;
+        padding: 1pt;
+        width: 100%;
+    }
+
+    .enddiv {
+        height: 0.6%;
+    }
+
+    .image1 {
+        width: 97%;
+        margin-bottom: 5px;
+        margin-left: 1.7px;
+        image-orientation: from-image;
+    }
+
+    .image2 {
+        width: 97%;
+        margin-bottom: 5px;
+        margin-left: 1.7px;
+        image-orientation: from-image
+    }
+
+    .image3 {
+        width: 97%;
+        margin-bottom: 5px;
+    }
+
+    .image4 {
+        width: 97%;
+        margin-bottom: 5px;
+    }
+
+    .image5 {
+        width: 97%;
+        margin-bottom: 5px;
+    }
+
+    .image6 {
+        width: 97%;
+        margin-bottom: 5px;
+    }
+
+    .image1:hover {
+        opacity: 0;
+    }
+
+    .image2:hover {
+        opacity: 0;
+    }
+
+    .sculpture1 {
+        background-image: url(image1info.png);
+        background-size: 100%;
+    }
+
+    .image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  align-content: left;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: transparent;
+}
+
+.overlay2 {
+  position: absolute;
+  align-content: left;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: transparent;
+}
+
+.container:hover .overlay, .container:active .overlay, .container:focus .overlay{
+  opacity: 1;
+}
+
+
+.container2:hover .overlay, .container2:active .overlay, .container2:focus .overlay{
+  opacity: 1;
+}
+
+.text {
+padding-left: 7px;
+margin-top: 7px;
+color: white;
+}
+
+.text2 {
+padding-left: 7px;
+margin-top: 7px;
+color: white;
+mix-blend-mode: difference;
+}
+
+.text3 {
+padding-left: 7px;
+margin-top: 7px;
+color: rgb(0, 0, 0);
+}
+
+
+.container {
+position: relative;
+  width: 100%;
+  
+}
+
+.container2 {
+position: relative;
+  width: 100%;
+  
+}
+
+@-webkit-keyframes entranceanimation2 {
+    0% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+
+
+.name {
+    font-size: 15pt;
+}
+
+.name2 {
+    font-size: 15pt;
+    mix-blend-mode: difference;
+}
+
+
+                    @media screen and (max-width: 700px) {
+    .mainphoto {
+        top: 100px;
+        width: 62%;
+        right: 20px;
+        animation: menuanimation2 1 5s forwards;
+        animation-delay: 1s;
+    }
+
+    .menu {
+        animation: menuanimation 1 5s forwards;
+    }
+
+    @-webkit-keyframes menuanimation {
+    0% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 60%;
+
+    }
+}
+
+@-webkit-keyframes menuanimation2 {
+    0% {
+        filter: blur(0);
+    }
+
+    100% {
+        filter: blur(30px);
+
+    }
+}
+
+.fcf-form-control3 {
+    display: block;
+    width: 85.5%;
+    height: 17px;
+    font-size: 10pt;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    background-color: transparent;
+    background-clip: padding-box;
+    border: 1px solid #000000;
+    outline: none;
+    margin-left: 2.7%;
+}
+
+
+.titleimage {
+        width: 50%;
+        opacity: 150%;
+    }
+
+
+    .animationwarning {
+        color: transparent;
+    }
+
+    
+    .righttopheader {
+        float: right;
+        color: #acb55c;
+        margin-right: -80px;
+        width: 100%;
+        font-family: vanished;
+        font-size: 17pt;  
+        position: fixed;
+    }
+
+    .maintext {
+        position: relative;
+        animation: entranceanimation 3s 1;
+    }
+
+    p {
+        color: rgb(0, 0, 0);
+        font-family: andale mono;
+        width: 200%;
+        margin-left: -184%;
+        margin-top: 70%;
+        text-align: left;
+        mix-blend-mode: darken;
+        font-weight: bold
+    }
+
+    .fcf-body {
+    
+    font-family: andale mono;
+    font-size: 1rem;
+    font-family: andale mono;
+    color: #000000;
+    text-align: left;
+    background-color: transparent;
+    padding-top: -0px;
+    border: 1px solid #000000;
+    width: 199%;
+    margin-left: -184.1%;
+    margin-bottom: 10.1%;
+}
+
+.text2 {
+    color: rgb(80, 79, 79);
+    stroke color: gray;
+    stroke-width: 5px;
+    mix-blend-mode: normal;
+}
+
+.maindiv {
+        margin-left: -240%;
+        column-width: ;
+        column-gap: 0px;
+        margin-top: 45.5%;
+        width: 65%;
+        stroke-width: 1pt;
+        
+
+    }
+
+    .image1 {
+        width: 505%;
+        opacity: 100%;
+        transition: 1500s;
+    }
+
+    .overlay{
+  position: absolute;
+  align-content: right;
+  top: 0;
+  bottom: 0;
+  left:200%;
+  right: 0;
+  height: 100%;
+  width: 100% ;
+  opacity: 0%;
+  transition: .5s ease;
+  background-color: transparent;
+}
+
+.overlay2 {
+  position: absolute;
+  align-content: right;
+  top: 0;
+  bottom: 0;
+left: 200%;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 100%;
+  transition: .5s ease;
+  background-color: transparent;
+}
+
+
+
+.name {
+    font-size: 15pt;
+    
+}
+
+.name2 {
+    font-size: 15pt;
+}
+
+p {
+        color: rgb(0, 0, 0);
+        font-family: andale mono;
+        text-align: left;
+    }
+
+}
+
+.instruction {
+    position: sticky;
+    margin-left: 3.8%;
+    width: 100%;
+    top: 4%;
+    animation: entranceanimation2 10s 1 forwards;
+}
+
+.enddiv {
+    height: 320px;
+}
+
+
+}
+
+</style>
+<body>
+
+    <div class="righttopheader">
+        images
+    </div> 
+    
+
+    <div class="maingrid">
+        <div class="title"><a href="index.html"><img class="titleimage" src="logo5.png" alt="righttopheader" ></a></div>
+        <div class="mainelement"><img class="mainphoto" src="sculpture5.jpg" alt=""></div>
+        <div class="three">
+     
+        </div >
+        <div class="menu">  
+            <a class="menuelement" href="aboutpage.html" id="toprightheader">about ∰ contact</a>
+            <div class="menudivs"></div>
+            <a class="menuelement" href="projectspage.html">projects</a>
+            <div class="menudivs"></div>
+            <a class="menuelement" href="bookspage.html">books</a>
+            <div class="menudivs"></div>
+            <a class="selectedmenuelement" href="imagespage.html">images</a>
+            <div class="menudivs"></div>
+            <a class="store" href="store.html">store</a>
+        </div>
+
+        
+        <div class="maindiv">
+           <p class="instruction">Hover over the images for details</p>
+
+            <div class="container">
+                <img class="image1" src="image1.jpg" alt="Avatar">
+                <div class="overlay">
+                    <p class="text"><em class="name">‘acapella 3’</em>  <br>
+                        <br> paper mache
+                        <br> /2020</p>
+                 </div>
+
+               
+
+                    
+                 <div class="container">
+                    <img class="image1" src="image2.jpg" alt="Avatar">
+                            <div class="overlay">
+                                <p class="text"><em class="name">‘acapella 3’</em>  <br>
+                                    <br> detail
+                                    <br> /2020</p>
+                             </div>
+
+                            
+                        </div>
+                     </div>
+             <div class="container">
+                    <img class="image1" src="image33.jpg" alt="Avatar" class="image">
+                        <div class="overlay">
+                            <p class="text"><em class="name">‘acapella 3’</em>  <br>
+                                <br> detail
+                                <br> /2020</p>
+                        </div>
+                     </div>
+                     
+                     <div class="container">
+            <img class="image1" src="sculpture2.jpg" alt="Avatar" class="image">
+                <div class="overlay">
+                    <p class="text"><em class="name">‘acapella 1/1’</em>  <br>
+                                    <br> plaster, textile, wood, mannequin, acrylic paint, paper mache
+                                    <br> /2020 <br>
+                                    <br>
+                                    detail (left image)</p>
+                </div>
+             </div>
+
+
+             <div class="container">
+                <img class="image1" src="image15.jpg" alt="Avatar" class="image">
+                    <div class="overlay">
+                        <p class="text"><em class="name">‘acapella 2’</em>  <br>
+                            <br> plaster, wax, hair
+                            <br> /2020</p>
+                    </div>
+                 </div>
+
+                     <div class="container">
+                        <img class="image1" src="image4.jpg" alt="Avatar" class="image">
+                            <div class="overlay">
+                                <p class="text"><em class="name">‘onboard 2’</em>  <br>
+                                    <br> ceramics
+                                    <br> /2019</p>
+                            </div>
+                         </div>
+
+                    <div class="container">
+                                <img class="image1" src="image8.jpg" alt="Avatar" class="image">
+                                    <div class="overlay">
+                                        <p class="text"><em class="name">‘onboard 2’</em>  <br>
+                                            <br> detail
+                                            <br> /2019</p>
+                                    </div>
+                                 </div>
+                                 
+
+                         <div class="container">
+                            <img class="image1" src="image7.jpg" alt="Avatar" class="image">
+                                <div class="overlay">
+                                    <p class="text"><em class="name">‘onboard 2’</em>  <br>
+                                        <br> detail
+                                        <br> /2019</p>
+                                </div>
+                             </div>
+
+                            <div class="container">
+                                        <img class="image1" src="image10.jpg" alt="Avatar" class="image">
+                                            <div class="overlay">
+                                                <p class="text"><em class="name">'untitled'</em>  <br>
+                                                    <br> wooden box, ceramics
+                                                    <br> /2019</p>
+                                            </div>
+                                         </div>
+                                         
+                                         <div class="container">
+                                            <img class="image1" src="image16.jpg" alt="Avatar" class="image">
+                                                <div class="overlay">
+                                                    <p class="text2"><em class="name2">'onboard 1'</em>  <br>
+                                                        <br> unglazed
+                                                        <br> /2019</p>
+                                                </div>
+                                             </div>
+                                 
+                                 <div class="container">
+                                        <img class="image1" src="image5.jpg" alt="Avatar" class="image">
+                                            <div class="overlay">
+                                                <p class="text"><em class="name">‘mirrors’</em>  <br>
+                                                    <br> ceramics
+                                                    <br> /2020</p>
+                                            </div>
+                                         </div>
+
+                                <div class="container">
+                                                <img class="image1" src="image11.jpeg" alt="Avatar" class="image">
+                                                    <div class="overlay">
+                                                        <div class="blacktext">
+                                                            <p class="text3"><em class="name">'madtree'</em>  <br>
+                                                                <br> ceramics
+                                                                <br> /2019</p>
+                                                    </div>
+                                                        
+                                                    </div>
+                                                 </div>
+
+                                         <div class="container">
+                                            <img class="image1" src="image10.jpeg" alt="Avatar" class="image">
+                                                <div class="overlay">
+                                                    <p class="text3"><em class="name">'dead-end'</em>  <br>
+                                                        <br> ceramics
+                                                        <br> /2018</p>
+                                                </div>
+                                             </div>
+
+                                                     <div class="container">
+                                                        <img class="image1" src="image14.jpg" alt="Avatar" class="image">
+                                                            <div class="overlay">
+                                                                <p class="text"><em class="name">'untitled'</em>  <br>
+                                                                    <br> ceramics
+                                                                    <br> /2017</p>
+                                                            </div>
+                                                         </div>
+
+                                                         
+                                         <div class="container">
+                                            <img class="image1" src="sculpture1.jpg" alt="Avatar" class="image">
+                                                <div class="overlay">
+                                                    <p class="text"><em class="name">'onboard 1'</em>  <br>
+                                                        <br> ceramics, ribbon, tyre
+                                                        <br> /2019</p>
+                                                </div>
+                                             </div>
+
+                                     <div class="container">
+                                        <img class="image1" src="sculpture44.jpg" alt="Avatar" class="image">
+                                            <div class="overlay">
+                                                <p class="text"><em class="name">'onboard 1'</em>  <br>
+                                                    <br> detail
+                                                    <br> /2019</p>
+                                            </div>
+                                         </div>
+                                         
+               
+               <div class="enddiv"></div>
+        </div>
+                             
+</body>
+</html>

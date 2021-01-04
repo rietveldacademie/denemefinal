@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about ∰ contact</title>
+    <link rel="icon" href="birceicon.png" type="image/icon type">
+</head>
+<style>
+
+html {
+        cursor: url(cursorpage2.png), auto;
+    }
+
+    @font-face {
+        font-family: vanished;
+        src: url(vanished.ttf);
+    }
+
+    @font-face {
+        font-family: andale mono;
+        src: url(andale.ttf);
+    }
+
+    body {
+        background: url(.jpg);
+        background-size:  90em;
+        background-repeat: no-repeat;
+        background-color: #f5f1f1;
+        background-attachment: fixed;
+    }
+
+    .maingrid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 10px;
+        position: absolute;
+    }
+
+    .title {
+        padding: 0.3%;
+        position: fixed;
+    }
+
+    .titleimage {
+        width: 36%;
+        max-width: 30em;
+        margin-top: -3%;
+
+    }
+
+    
+
+    .mainphoto {
+        width: 28%;
+        position: fixed;
+        outline: solid rgb(255, 255, 255);
+        outline-width: 0.6pt;
+    }
+
+    .mainelement {
+        margin-left: 15em;
+        margin-top: 1.7em;
+        transition: width 2s, height 4s;
+    }
+
+    .menu {
+        transform: rotate(270deg);
+        position: fixed;
+        left: -45px;
+        font-size: 17pt;
+        font-family: vanished;
+        text-decoration: none;
+        bottom: 95px;
+    }
+
+    .menuelement:hover {
+        color: transparent;
+        -webkit-text-stroke-color: #acb55c;
+        -webkit-text-stroke-width: 1.5px;
+    }
+
+    .righttopheader {
+        float: right;
+        color: #acb55c;
+        margin-left: 78.5%;
+        width: 300px;
+        font-family: vanished;
+        font-size: 17pt;  
+        margin-top: 12px; 
+        position: fixed;
+        right: 2px;
+    }
+
+    .menudivs {
+        height: 8px;
+    }
+
+    a {
+        text-decoration: none;
+        color:  #a0a8a1;
+
+    }
+
+    .store {
+        -webkit-text-stroke-color: #a0a8a1;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-fill-color: transparent;
+        letter-spacing: 2px;
+    }
+
+    .store:hover {
+        -webkit-text-stroke-color: #acb55c;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-fill-color: transparent
+    }
+
+    .selectedmenuelement {
+        -webkit-text-stroke-color: #acb55c;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-fill-color: transparent;
+    }
+
+
+
+    p {
+        color: rgb(0, 0, 0);
+        font-family: andale mono;
+        width: 40%;
+        margin-left: 37%;
+        margin-top: 55px;
+        text-align: left;
+    }
+
+    .seperatordiv {
+        height: 1px;
+    }
+
+    .insidetext {
+        margin-top: 0;
+        text-align: left;
+    }
+
+    .insidetext2 {
+        margin-top: -14px;
+    }
+    .insideheader {
+        margin-top: 35px;
+        text-decoration: underline;
+    }
+
+    .insideheader2 {
+        margin-top: 26px;
+        margin-bottom: -20px;
+        text-decoration: underline;
+    }
+
+    .insideheader3 {
+        margin-top: -15px;
+        margin-bottom: -35px;
+        text-decoration: underline;
+    }
+
+    .maintext {
+        left: 200px;
+        position: sticky;
+        animation: entranceanimation 3s 1;
+    }
+
+    .smallerseperator {
+        height: 0.1px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .contactbox { 
+        width: 10.1%;
+        height: 10em;
+        outline: solid white;
+        outline-width: 1.5px;
+    }
+
+    input[type=text], select, textarea, ::placeholder{
+  width: 400%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-left: 400px;
+  margin-bottom: 16px;
+  resize: vertical;
+  text-decoration: yellow;
+}
+
+.contactbox {
+    margin-top: -20px;
+    left: 36.9%;
+    width: 39%;
+    height: 156px;
+    position: relative;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+    font-family: andale mono;
+}
+
+.submitbutton {
+    left: 36.9%;
+    width: 10%;
+    position: relative;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+    font-family: andale mono;
+}
+
+@-webkit-keyframes entranceanimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+
+    }
+}
+
+    .thintext {
+        animation: entranceanimation 2.5s 1;
+    }
+
+    .statement2nd {
+        margin-top: -5px;
+    }
+  
+  .contactboxdiv {
+        width: 20%;
+        position: left;
+        border: solid white;
+      }
+
+
+    .enddiv {
+        height: 10%;
+    }
+
+    .enddiv2 {
+        height: 0.55%;
+    }
+
+    #fcf-form {
+    display:block;
+}
+
+.fcf-body {
+    
+    font-family: andale mono;
+    font-size: 1rem;
+    font-family: andale mono;
+    color: #000000;
+    text-align: left;
+    background-color: transparent;
+    padding-top: -0px;
+    border: 1px solid #000000;
+    width: 39%;
+    margin-left: 37.1%;
+    margin-bottom: 10.1%;
+}
+
+.fcf-form-group {
+    margin-bottom: 0rem;
+    font-family: andale mono;
+    font-size: 10pt;
+}
+
+.fcf-input-group {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 95%;
+    margin-left: 2.7%;
+    background-color: transparent;
+}
+
+.fcf-form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    font-size: 10pt;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    background-color: transparent;
+    background-clip: padding-box;
+    border: 1px solid #000000;
+    outline: none;
+    margin-left: 0;
+}
+
+.fcf-form-control3 {
+    display: block;
+    width: 88.5%;
+    height: 17px;
+    font-size: 10pt;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    background-color: transparent;
+    background-clip: padding-box;
+    border: 1px solid #000000;
+    outline: none;
+    margin-left: 2.7%;
+}
+
+
+.fcf-form-control:focus {
+    border: 1px solid #000000;
+}
+
+select.fcf-form-control[size], select.fcf-form-control[multiple] {
+    height: auto;
+}
+
+textarea.fcf-form-control {
+    font-family: andale mono;
+    height: auto;
+}
+
+label.fcf-label {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    background-color: transparent;
+    margin-left: 10px;
+    margin-top: 10px
+}
+
+
+.fcf-credit {
+    padding-top: 10px;
+    font-size: 0.9rem;
+    color: #545b62;
+}
+
+.fcf-credit a {
+    color: #545b62;
+    text-decoration: underline;
+}
+
+.fcf-credit a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.fcf-btn {
+    display: inline-block;
+    font-weight: 400;
+    
+    color: #212529;
+    text-align: left;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    font-size: 7pt;
+    line-height: 0.5;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .fcf-btn {
+        transition: none;
+    }
+}
+
+.fcf-btn:hover {
+    color: #212529;
+    text-decoration: none;
+}
+
+.fcf-btn:focus, .fcf-btn.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.fcf-btn-primary {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    border-color: black;
+    font-family: andale mono;
+    font-size: 0.5rem;
+}
+
+.fcf-btn-primary:hover {
+    color: #fff;
+    background-color: #979797;
+    border-color: #979797;
+}
+
+.fcf-btn-primary:focus, .fcf-btn-primary.focus {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+
+.fcf-btn-lg, .fcf-btn-group-lg>.fcf-btn {
+    font-size: 10pt;
+    line-height: 1.5;
+
+}
+
+.fcf-btn-block {
+    display: block;
+    width: 95%;
+    margin-left: 12px;
+}
+
+.fcf-btn-block+.fcf-btn-block {
+    margin-top: 0.5rem;
+}
+
+input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[type="button"].fcf-btn-block {
+    width: 100%;
+}
+
+.fcf-h3 {
+    margin-top: -1px;
+    margin-left: 1px;
+    font-size: 1rem;
+}
+
+.how {
+    margin-top: -10px;
+}
+
+.enddiv3 {
+    height: 14px;
+}
+
+                @media screen and (max-width: 700px) {
+    .mainphoto {
+        top: 100px;
+        width: 62%;
+        right: 20px;
+        animation: menuanimation2 1 5s forwards;
+        animation-delay: 1s;
+        z-index: -10;
+    }
+
+    .menu {
+        animation: menuanimation 1 5s forwards;
+    }
+
+    @-webkit-keyframes menuanimation {
+    0% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 60%;
+
+    }
+}
+
+@-webkit-keyframes menuanimation2 {
+    0% {
+        filter: blur(0);
+    }
+
+    100% {
+        filter: blur(30px);
+
+    }
+}
+
+.fcf-form-control3 {
+    display: block;
+    width: 85.5%;
+    height: 17px;
+    font-size: 10pt;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    background-color: transparent;
+    background-clip: padding-box;
+    border: 1px solid #000000;
+    outline: none;
+    margin-left: 2.7%;
+}
+
+
+.titleimage {
+        width: 50%;
+        opacity: 150%;
+    }
+
+
+    .animationwarning {
+        color: transparent;
+    }
+
+
+    .maintext {
+        position: relative;
+        animation: entranceanimation 3s 1;
+    }
+
+    p {
+        color: rgb(0, 0, 0);
+        font-family: andale mono;
+        width: 235%;
+        margin-left: -164%;
+        margin-top: 80%;
+        text-align: left;
+        font-weight: bold;
+        z-index: 950;
+    }
+
+    .fcf-body {
+    
+    font-family: andale mono;
+    font-size: 1rem;
+    font-family: andale mono;
+    color: #000000;
+    text-align: left;
+    background-color: transparent;
+    padding-top: -0px;
+    border: 1px solid #000000;
+    width: 229%;
+    margin-left: -164.1%;
+    margin-bottom: 10.1%;
+}
+
+.righttopheader {
+        float: right;
+        text-align: right;
+        color: #acb55c;
+        margin-right: 12.5%;
+        width: 100px;
+        font-family: vanished;
+        font-size: 17pt;  
+        margin-top: 12px; 
+        position: fixed;
+        right: 2px;
+    }
+
+    .enddiv {
+    height: 310px;
+}
+
+
+
+}
+
+</style>
+<body>
+
+    <div class="maingrid">
+        <div class="title"><a href="index.html"><img class="titleimage" src="logo2.png" ></a></div>
+        <div class="mainelement"><img class="mainphoto" src="sculpture2.jpg" alt=""></div>
+        <div class="three">
+     
+       <div class="righttopheader">
+        about∰
+        contact
+    </div>
+        <div class="thintext">
+            <p class="maintext ">
+                
+                                    <p class="statement2nd">Birce Dar makes sculptures, installations, and mixed-media art works. By working predominantly
+                                        with raw materials, she is interested in their response to both her intuitive manipulation of them, and
+                                        more organic changes, such as the passing of time.
+                                            <div class="enddiv2"></div>
+                                        <p class="how">Her conceptual approach dwells on storytelling and its capacity for manipulation. Absurdism sits at
+                                        the center of her works and interacts directly with themes such as time, memory, political events and
+                                        histories. As a result of a multicultural upbringing, she refers to these concepts in relation to the
+                                        ‘now’, and how now can be twisted, just like the raw materiality of clay. Reflecting on everyday
+                                        events, Dar seeks to evoke poetic images or dreamlike compositions where reality and fiction come
+                                        together, past and present mix, and meanings shift, often with disruptive attempt.</p>
+                                        <div class="enddiv2"></div>
+                                        <p class="statement2nd">
+                                        She finds inspiration in her own fears, desires and dreams in order to explore these often-neglected
+                                        realms with a playfulness that makes space for humor and absurdity, as well as retaining a certain
+                                        heaviness.</p>
+                                        <div class="enddiv2"></div>
+                                        <p class="statement2nd">
+                                        Besides the ‘good’ and ‘bad’, the ‘humorous’ and ‘heavy’, her work is also concerned with duality in
+                                        language, namely the potential for words to be either ‘ambiguous’ or ‘direct’. She treats language,
+                                        with its fluid and slippery foundations, as the root of a kind of problem. How the past is represented
+                                        in the now depends heavily on ways of using words; a manipulation of facts, bias and claims can
+                                        produce a new reality. This problem cannot necessarily be solved, only <em> experienced.</em></p>
+                                        <div class="enddiv2"></div>
+                                        <p class="statement2nd">
+                                        Objects that she collects from the streets create layers of symbolic and metaphorical meaning
+                                        within her sculptural work, which also gain a certain theatricality through use of sound and lighting
+                                        effects.</p>
+                                        <div class="enddiv2"></div>
+                <p class="insideheader ">Education
+                    <div class="seperatordiv"></div>
+                <p class="insidetext ">2017 - 2020 
+                Ceramics BA, Gerrit Rietveld Academie
+                NL</p>
+                    <p class="insidetext ">2013 - 2014
+                    Education (SLA Teaching) MA, Kingston University 
+                    UK</p>
+                        <p class="insidetext ">2008 - 2011
+                            English Studies BA, Malmö University 
+                                    SWE</p> 
+                                    <p></p>
+                            
+
+                        <p class="insideheader">Contact</p>   
+                        <div class="fcf-body">
+
+                            <div id="fcf-form">
+                            
+                        
+                            <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+                                
+                                <div class="fcf-form-group">
+                                    <label for="Name" class="fcf-label" >Your name:</label>
+                                        <textarea type="text" id="Name" name="Name" class="fcf-form-control3" rows="1" maxlength="3000" required></textarea>
+                                    </div>
+                                </div>
+                        
+                                <div class="fcf-form-group">
+                                    <label for="Email" class="fcf-label" >E-mail address:</label>
+                                    <div class="fcf-input-group">
+                                        <textarea type="email" name="Email" id="Email" cols="30" class="fcf-form-control" rows="1" required></textarea>
+                                    </div>
+                                </div>
+                        
+                                <div class="fcf-form-group">
+                                    <label for="Message" class="fcf-label">Message:</label>
+                                    <div class="fcf-input-group">
+                                        <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                                    </div>
+                                </div>
+                        
+                                <div class="fcf-form-group">
+                                    <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
+                                    <div class="enddiv3"></div>
+                                </div>
+
+</div ><div class="enddiv"></div>
+
+
+    <div>
+         
+        <div class="menu">  
+            <a class="selectedmenuelement" href="" id="toprightheader">about ∰ contact</a>
+            <div class="menudivs"></div>
+            <a class="menuelement" href="projectspage.html">projects</a>
+            <div class="menudivs"></div>
+            <a class="menuelement" href="bookspage.html">books</a>
+            <div class="menudivs"></div>
+            <a class="menuelement" href="imagespage.html">images</a>
+            <div class="menudivs"></div>
+            <a class="store" href="store.html">store</a>
+        </div>
+    </div>
+                            </form>
+                            </div>
+                        
+                        </div>
+
+                        
+                        
+                </div>
+
+    
+                            
+</body>
+</html>
